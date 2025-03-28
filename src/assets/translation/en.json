@@ -1,0 +1,9 @@
+{
+  "title": "Solar Panel Measurement",
+  "voltage": "Voltage (V)",
+  "current": "Current (A)",
+  "resistance": "Resistance (MΩ)",
+  "next": "Next Cable",
+  "save": "Save",
+  "load": "Load"
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Měření solárních panelů",
+  "voltage": "Napětí (V)",
+  "current": "Proud (A)",
+  "resistance": "Odpor (MΩ)",
+  "next": "Další kabel",
+  "save": "Uložit",
+  "load": "Načíst"
+}
