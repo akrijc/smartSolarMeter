@@ -1,0 +1,3 @@
+# SmartSolarMeter
+
+Popis bude doplněn.
