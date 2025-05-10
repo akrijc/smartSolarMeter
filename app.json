@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "SolarPanelMeasurementApp",
-    "slug": "solarpanelmeasurementapp",
+    "name": "SmartSolarMeter",
+    "slug": "smartsolarmeter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/solarmeter_splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,31 +17,42 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.tvoje.jmeno.solarapp",
+      "bundleIdentifier": "com.tvoje.jmeno.solarmeter",
+      "buildNumber": "5",
       "supportsTablet": true,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "NSPhotoLibraryAddUsageDescription": "App needs access to save photos to your gallery."
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to view saved measurement photos.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs permission to save measurement photos to your gallery.",
+        "NSCameraUsageDescription": "This app needs access to the camera to scan and take measurement photos."
       }
     },
     "android": {
-      "package": "com.tvoje.jmeno.solarapp",
+      "package": "com.tvoje.jmeno.solarmeter",
       "permissions": [
-        "android.permission.RECORD_AUDIO"
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.READ_MEDIA_IMAGES"
       ]
     },
     "plugins": [
+      "expo-camera",
+      "expo-media-library",
+      "expo-file-system",
       [
         "expo-image-picker",
         {
-          "photosPermission": "Používáme vaši galerii pro ukládání fotek měření."
+          "photosPermission": "We use your photo library to save measurement images."
         }
-      ],
-      "./with-text-recognition"
+      ]
     ],
     "extra": {
       "eas": {
-        "projectId": "6070459b-138b-499e-a0ce-aecd639818e0"
+        "projectId": "df03fc80-7a77-47f5-83d7-7e603f2ac468"
       }
     },
     "owner": "akrij23"

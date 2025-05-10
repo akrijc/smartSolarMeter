@@ -6,6 +6,9 @@
     "preview": {
       "developmentClient": true,
       "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
       "ios": {
         "simulator": false,
         "buildConfiguration": "Release"
@@ -14,6 +17,9 @@
     "release": {
       "developmentClient": false,
       "distribution": "store",
+      "android": {
+        "buildType": "app-bundle"
+      },
       "ios": {
         "simulator": false,
         "buildConfiguration": "Release"
