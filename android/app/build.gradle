@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.akrij23.SolarPanelMeasurementApp'
+    namespace 'com.tvoje.jmeno.solarmeter'
     defaultConfig {
-        applicationId 'com.akrij23.SolarPanelMeasurementApp'
+        applicationId 'com.tvoje.jmeno.solarmeter'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

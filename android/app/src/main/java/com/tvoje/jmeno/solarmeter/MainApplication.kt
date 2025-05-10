@@ -1,4 +1,4 @@
-package com.akrij23.SolarPanelMeasurementApp
+package com.tvoje.jmeno.solarmeter
 
 import android.app.Application
 import android.content.res.Configuration

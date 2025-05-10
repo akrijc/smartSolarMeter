@@ -1,16 +1,45 @@
-# OSX
-#
+# ------------------------------
+# 🍏 macOS
 .DS_Store
 
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
+# 🧠 IDE / Tools
+.idea/
+.vscode/
 *.iml
+
+# 📦 Node & Yarn/NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔨 Build Artifacts
+/build
+/dist
+.expo/
+
+# ⚛️ React Native
+*.jsbundle
 *.hprof
 .cxx/
+*.keystore
 
-# Bundle artifacts
-*.jsbundle
+# 📱 Android Native Files (included for EAS!)
+!android/gradlew
+!android/gradlew.bat
+!android/build.gradle
+!android/settings.gradle
+!android/gradle.properties
+!android/gradle/**
+
+# 📲 iOS (if used)
+ios/
+!ios/Podfile
+!ios/Podfile.lock
+!ios/*.xcodeproj
+!ios/*.xcworkspace
+!ios/Info.plist
+
+# 🌐 Misc
+.env
+*.log
