@@ -43,6 +43,7 @@
       "expo-camera",
       "expo-media-library",
       "expo-file-system",
+      "expo-font",                       
       [
         "expo-image-picker",
         {
