@@ -96,3 +96,6 @@ dependencies {
         implementation jscFlavor
     }
 }
+
+// ✅ DOPLNĚNO ZDE:
+apply plugin: 'expo-module'
