@@ -1,9 +1,8 @@
-rootProject.name = 'SmartSolarMeter'
+ed on https://github.com/expo/expo/blob/main/packages/expo-modules-core/scripts/autolinking.gradle
+def applyExpoModules(context) {
+    def reactNativeRoot = new File(["node", "--print", "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim()).getParentFile()
+    def expoModulesAutolinking = new File(["node", "--print", "require.resolve('expo-modules-autolinking/package.json')"].execute(null, rootDir).text.trim()).getParentFile()
+    apply from: new File(expoModulesAutolinking, 'android/autolinking.gradle'), to: context
+}
 
-apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle")
-applyNativeModulesSettingsGradle(settings)
-
-apply from: file("../node_modules/expo-modules-core/scripts/autolinking.gradle")
-useExpoModules()
-
-include ':app'
+applyExpoModules(this)
